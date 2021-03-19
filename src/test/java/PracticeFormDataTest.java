@@ -26,13 +26,13 @@ public class PracticeFormDataTest {
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(userEmail);
-        $("#gender-radio-1").doubleClick();
+        $("label[for='gender-radio-1']").click();
         $("#userNumber").setValue(userNumber);
 
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOptionContainingText(birthdayMonth);
         $(".react-datepicker__year-select").selectOptionByValue(birthdayYear);
-        $$(".react-datepicker__day--001").first().click();
+        $(".react-datepicker__day--001").click();
 
         $("#subjectsInput").setValue(subject).pressTab();
         $("label[for='hobbies-checkbox-3']").click();
